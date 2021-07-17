@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f2b674ca10.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
+  <title>Booklist</title>
+</head>
+<body>
+  <!-- book container -->
+  <div id="book-container">
+    <div class="book-container-content">
+      <h1 class="heading">Add Book</h1>
+      <form id="book-form">
+        <div>
+          <label for="title">Book Title</label>
+          <input type="text" class="title">
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" class="author">
+        </div>
+        <div>
+          <label for="isbn">ISBN</label>
+          <input type="number" class="isbn">
+        </div>
+        <div>
+          <input type="submit" class="submit" value="SUBMIT">
+        </div>
+      </form>
+    </div>
+    <hr>
+
+    <!-- output -->
+    <div style="overflow-x:auto;">
+      <table class="output-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>  
+  </div>
+ 
+<script src="app.js"></script> 
+</body>
+</html>

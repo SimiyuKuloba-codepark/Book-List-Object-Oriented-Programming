@@ -1,0 +1,16 @@
+
+#book-container .book-container-content #book-form input[type=text],
+#book-container .book-container-content #book-form input[type=number]{
+  padding: .3rem 3rem .3rem .5rem;
+  opacity: 0.7;
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+
+hr{
+  margin: 2rem 1rem;
+}
+
+.output-table thead tr th{ 
+  padding:1rem 1rem;
+}

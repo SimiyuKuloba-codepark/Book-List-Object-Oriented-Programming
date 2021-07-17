@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-font: 'Montserrat', sans-serif;
+  --background-primary: rgba(68, 6, 37, 0.8);
+}
+
+body{
+  font-family: var(--primary-font);
+}
+
+.success,
+.error{
+  color: #fff;
+  padding: .5rem 2rem;
+  margin: 5px 0px 15px 0px;
+  border-radius: 3px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+
+.success{
+  background: green;
+}
+
+.error{
+  background: rgb(238, 64, 64);
+}
+
+/* book -container */
+#book-container{
+  background: var(--background-primary);
+  position: relative;
+  height: 100vh;
+}
+
+#book-container::before{
+  content: "";
+  background: url('event2.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#book-container .book-container-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+#book-container .book-container-content h1{
+  color: yellow;
+}
+
+#book-container .book-container-content #book-form label{
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+#book-container .book-container-content #book-form input[type=text],
+#book-container .book-container-content #book-form input[type=number]{
+  padding: .3rem 6rem .3rem .5rem;
+  opacity: 0.7;
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+
+#book-container .book-container-content #book-form input[type=text],
+#book-container .book-container-content #book-form input[type=number]:focus{
+  outline: none;
+}
+
+#book-container .book-container-content #book-form .submit{
+  padding: .3rem 1rem;
+  margin-top: .6rem;
+  background: yellow;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  width: 100%;
+}
+
+#book-container .book-container-content #book-form .submit:focus{
+  outline: none;
+}
+
+#book-container .book-container-content #book-form .submit:hover{
+  background: rgb(160, 160, 4);
+  cursor: pointer;
+}
+
+hr{
+  margin: 2rem 16rem;
+}
+
+/* table */
+.output-table{
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 70%;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.output-table thead{
+  background: rgba(99, 96, 96, 0.315);
+  color: #fff;
+  text-align: center;
+}
+
+.output-table tbody{
+  background: rgba(245, 242, 242, 0.479);
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid white;
+}
+
